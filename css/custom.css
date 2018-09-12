@@ -1,10 +1,10 @@
 @font-face{
     font-family: title;
-    src: url("/fonts/GamjaFlower-Regular.ttf");
+    src: url("fonts/GamjaFlower-Regular.ttf");
 }
 
 body{
-    background-image: url(/images/forest.jpg);
+    background-image: url(images/forest.jpg);
     background-size: cover !important;
     background-repeat: repeat !important;
 }
