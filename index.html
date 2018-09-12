@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        
+        <title>Exploration Login</title>
+        <!-- CUSTOM CSS -->
+        <link rel="stylesheet"type="text/css" href="css/custom.css">
+        <!-- Materialize -->
+        <link rel="stylesheet"type="text/css" href="css/materialize.css">
+        
+        <style>
+        
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <div id="loginContainer">
+        
+            <div id="login" class="z-depth-5">
+                <p class="title">Exploration Inc.</p>
+                <hr class="hrS">
+                
+                <form>
+                                
+                    <input id="username" class="input" type="text" name="username" placeholder="Username" maxlength="15">
+                    <input id="password" class="input" type="password" name="password" placeholder="Password" maxlength="15">
+                    <button class="buttonParam btn-floating pulse" onclick="checkLogin()">LOGIN</button>
+                    <button class="buttonParam btn-floating cyan pulse" onclick="notSignUp()">SIGN UP</button>
+                    <div id="messageLogin"><p class="msg">*This is a test site. There are no sign-ups<br>Username: user<br>Password: pass</p></div>
+                                    
+                </form>
+        
+            </div>
+        
+        </div>
+        
+    </body>
+    
+    <script>
+    
+            function checkLogin(){
+                if(document.getElementById('password').value == 'pass' && document.getElementById('username').value == 'user'){
+                    location.href = "http://127.0.0.1:57796/thelaststandMember.html";
+                } 
+                else {
+                    alert('The username/password has been entered incorrectly! Try again.');
+                    return false;
+                }
+            }
+        
+        function notSignUp(){
+            alert("This is simply a test page, there is no need to sign up. Use the credentials listed below to gain access to the page.")
+        }
+    
+    </script>
+
+</html>

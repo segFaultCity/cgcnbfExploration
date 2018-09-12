@@ -1,0 +1,75 @@
+@font-face{
+    font-family: title;
+    src: url("/fonts/GamjaFlower-Regular.ttf");
+}
+
+body{
+    background-image: url(/images/forest.jpg);
+    background-size: cover !important;
+    background-repeat: repeat !important;
+}
+
+#loginContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.title{
+    font-family: title, cursive;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+    color: green;
+}
+
+.hrS{
+    border: none;
+    height: 2px;
+    background-color: black;`   `
+}
+
+#login{
+    width: 400px;
+    height: 450px;
+    opacity: 0.95;
+    background-color: white;
+    border: black solid 2px;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+}
+
+.buttonParam{
+    width: 300px !important;
+    height: 40px !important;
+    border-radius: 0 !important;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.input{
+    width: 300px !important;
+    height: 40px !important;
+    border: green solid 2px !important;
+    border-radius: 0 !important;
+    margin: 10px !important;
+    margin-left: 20px !important;
+    box-shadow: 3px 3px 2px black !important;
+}
+
+#messageLogin{
+    width: 300px;
+    height: 150px;
+    text-align: left;
+    margin-left: 55px;
+    text-align: center;
+}
+
+.msg{
+    font-family: title, cursive;
+    font-size: 15px;
+    color: black;
+}
