@@ -24,15 +24,16 @@
                 <p class="title">Exploration Inc.</p>
                 <hr class="hrS">
                 
-                <form>
+<!--                <form>-->
                                 
                     <input id="username" class="input" type="text" name="username" placeholder="Username" maxlength="15">
                     <input id="password" class="input" type="password" name="password" placeholder="Password" maxlength="15">
                     <button class="buttonParam btn-floating pulse" onclick="checkLogin()">LOGIN</button>
                     <button class="buttonParam btn-floating cyan pulse" onclick="notSignUp()">SIGN UP</button>
+                    
                     <div id="messageLogin"><p class="msg">*This is a test site. There are no sign-ups<br>Username: user<br>Password: pass</p></div>
                                     
-                </form>
+<!--                </form>-->
         
             </div>
         
@@ -42,12 +43,12 @@
     
     <script>
     
-            function checkLogin(){
+        function checkLogin(){
                 if(document.getElementById('password').value == 'pass' && document.getElementById('username').value == 'user'){
-                    location.href = "https://segfaultcity.github.io/cgcnbfExploration/parallax.html";
+                    location.href = "http://127.0.0.1:57824/parallax.html";
                 } 
                 else {
-                    alert('The username/password has been entered incorrectly! Try again.');
+                    alert('The username/password has been entered incorrectly! Try again. Username: user | Password: pass');
                     return false;
                 }
             }
