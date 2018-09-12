@@ -17,7 +17,7 @@
     background-image: url("../images/earlyRise.jpg");
 
     /* Set a specific height */
-    height: 500px; 
+    height: 400px; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -26,6 +26,35 @@
     background-size: cover;
 }
 
+.parallax3 { 
+    /* The image used */
+    background-image: url("../images/river.png");
+
+    /* Set a specific height */
+    height: 400px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax4 { 
+    /* The image used */
+    background-image: url("../images/whoa.jpg");
+
+    /* Set a specific height */
+    height: 400px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .sectionD{
     width: 100%;
     height: 200px;
@@ -33,4 +62,82 @@
     text-align: center;
     padding: 20px;
     border: black solid 2px;
+}
+
+.sectionDE{
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(-45deg,white 10%,white 30%,grey);
+    text-align: center;
+    padding: 20px;
+    border: black solid 2px;
+}
+
+/* animation */
+#openOne{
+    margin-top: 150px;
+    margin-left: -10000px;
+    font-size: 75px;
+    font-family: serif;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2.00px;
+    text-align: center;
+    animation: slideInRight 0.5s forwards;
+}
+
+#openTwo{
+    margin-top: 150px;
+    margin-left: -10000px;
+    font-size: 75px;
+    font-family: serif;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2.00px;
+    text-align: center;
+    animation: slideInRight 0.5s forwards;
+    animation-delay: 0.5s
+}
+
+#openThree{
+    margin-top: 150px;
+    margin-left: -10000px;
+    font-size: 75px;
+    font-family: serif;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2.00px;
+    text-align: center;
+    animation: slideInRight 0.5s forwards;
+    animation-delay: 1s;
+}
+
+.margin{
+    margin-top: 40px;
+}
+
+#titleName{
+    opacity: 0;
+    animation: fadeIn 4s forwards;
+    animation-delay: 1.5s;
+}
+
+.seperator{
+    width: 33.33%;
+    height: 50px;
+    float: left;
+}
+
+#container{
+    margin: auto;
+}
+
+@-webkit-keyframes slideInRight{
+    from {margin-left: -10000px;}
+    to {margin-left: 0px;}
+}
+
+@-webkit-keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
